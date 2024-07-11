@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta
+			name="viewport"
+			content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png" />
+		<link
+			rel="stylesheet"
+			href="./style.css" />
+
+		<title>Interactive card details form</title>
+
+		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+		<!-- <style>
+			.attribution {
+				font-size: 11px;
+				text-align: center;
+			}
+			.attribution a {
+				color: hsl(228, 45%, 44%);
+			}
+		</style> -->
+	</head>
+	<body>
+		<div class="main">
+			<div class="left-main">
+				<img
+					class="left-banner"
+					src="./images/bg-main-desktop.png"
+					alt="" />
+				<div class="card-front">
+					<div class="circle"></div>
+					<div class="card-info">
+						<p id="an">0000 0000 0000 0000</p>
+						<div class="ja">
+							<p id="n">JANE APPLESEED</p>
+							<span id="my">00/00</span>
+						</div>
+					</div>
+				</div>
+				<div class="card-back"></div>
+			</div>
+			<div class="details">
+				<div class="first">
+					<span>CARDHOLDER NAME</span>
+					<input
+						id="cardholder"
+						class="cn"
+						type="text"
+						placeholder="e.g.Jane Appeseed" />
+				</div>
+				<div class="second">
+					<span>CARD NUMBER</span>
+					<input
+						id="cardno"
+						class="cn"
+						type="text"
+						placeholder="e.g.1234 5678 9123 0000" />
+				</div>
+				<div class="third">
+					<div class="date">
+						<span>EXP.DATE (MM/YY)</span>
+						<div class="my">
+							<input
+								id="mm"
+								class="mm"
+								type="text"
+								placeholder="MM" />
+							<input
+								id="yy"
+								class="yy"
+								type="text"
+								placeholder="YY" />
+						</div>
+					</div>
+					<div class="cvc">
+						<span> CVC</span>
+						<input
+							class="num"
+							type="text"
+							placeholder="e.g.123" />
+					</div>
+				</div>
+				<div class="four">
+					<button
+						id="confirm"
+						style="color: white">
+						Confirm
+					</button>
+				</div>
+			</div>
+		</div>
+		<script src="./app.js"></script>
+	</body>
+</html>
